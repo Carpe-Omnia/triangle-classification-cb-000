@@ -1,11 +1,7 @@
 class Triangle
   attr_accessor :side1, :side2, :side3
 
-  def initialize(side1, side2, side3)
-    @side1 = side1
-    @side2 = side2
-    @side3 = side3
-  end
+
 
   class TriangleError < StandardError
     def message
@@ -30,5 +26,10 @@ class Triangle
       end
     end
   end
-
+  def initialize(side1, side2, side3)
+    @side1 = side1
+    @side2 = side2
+    @side3 = side3
+    kind 
+  end
 end
