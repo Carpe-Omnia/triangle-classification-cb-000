@@ -12,11 +12,12 @@ class Triangle
         @kind = :equilateral
       elsif side1 == side2 || side1 == side3 || side2 == side3
         @kind = :isosceles
-      else 
-        @kind = :scalene 
-      end 
-    end 
-  end 
-          
-        
+      else
+        @kind = :scalene
+      end
+    end
+  end
+  class TriangleError < StandardError
+
+
 end
